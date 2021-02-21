@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("Nice weather we're all having!");
         System.out.println("Yeah, it's been really nice");
         System.out.println("Makes me want to dance a Jig!");
+        System.out.println("Random stuff");
         System.out.println("I hate Mondays!");
         System.out.println("Proably have to rebase.");
     }
