@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".AddRecipe">
 
+    <Button
+        android:id="@+id/addIngredientButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="addIngredient"
+        android:text="Add ingredient"
+        app:layout_constraintBottom_toTopOf="@+id/recipeInstructions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/recipeInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Add Recipe Instructions"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/addIngredientButton"
+        app:layout_constraintStart_toStartOf="@+id/addIngredientButton"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Submit Recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Save"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/recipeInstructions"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Edit"
+        app:layout_constraintEnd_toEndOf="@+id/recipeInstructions"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        tools:layout_editor_absoluteY="231dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
