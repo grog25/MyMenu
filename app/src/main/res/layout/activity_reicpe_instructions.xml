@@ -8,22 +8,14 @@
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="393dp"
-        android:layout_height="157dp"
+        android:layout_width="392dp"
+        android:layout_height="351dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Enter recipe step"
+        android:hint="Enter recipe instructions"
         android:inputType="textMultiLine"
         tools:layout_editor_absoluteX="11dp"
         tools:layout_editor_absoluteY="303dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add step"
-        tools:layout_editor_absoluteX="152dp"
-        tools:layout_editor_absoluteY="471dp" />
 
     <Button
         android:id="@+id/button3"
