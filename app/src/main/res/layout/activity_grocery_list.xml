@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".GroceryList">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="188dp"
+        android:layout_height="77dp"
+        android:text="Shopping List"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="322dp"
+        android:layout_height="533dp"
+        android:text="Shopping list with check boxes"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="175dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

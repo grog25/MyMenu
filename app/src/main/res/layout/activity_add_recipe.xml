@@ -7,57 +7,133 @@
     tools:context=".AddRecipe">
 
     <Button
-        android:id="@+id/addIngredientButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:onClick="addIngredient"
-        android:text="Add ingredient"
-        app:layout_constraintBottom_toTopOf="@+id/recipeInstructions"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/recipeInstructions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Add Recipe Instructions"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/addIngredientButton"
-        app:layout_constraintStart_toStartOf="@+id/addIngredientButton"
-        tools:layout_editor_absoluteY="170dp" />
-
-    <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="Submit Recipe"
+        android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Save"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toStartOf="@+id/recipeInstructions"
-        tools:layout_editor_absoluteY="231dp" />
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="243dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Enter Ingredient"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="358dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Recipe Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Measurement"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="Edit"
-        app:layout_constraintEnd_toEndOf="@+id/recipeInstructions"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        tools:layout_editor_absoluteY="231dp" />
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="159dp"
+        android:text="Add Ingredient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="395dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="9dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:text="Breakfast"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lunch"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="86dp"
+        android:layout_height="49dp"
+        android:text="Dinner"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="93dp"
+        android:layout_height="47dp"
+        android:text="Dessert"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="84dp"
+        android:layout_height="46dp"
+        android:text="Other"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="562dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="80dp"
+        android:layout_height="19dp"
+        android:text="Category"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="419dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Side Dish"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="566dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
