@@ -19,7 +19,7 @@
         android:id="@+id/textView6"
         android:layout_width="322dp"
         android:layout_height="533dp"
-        android:text="Shopping list with check boxes"
+        android:text="Shopping list with check boxes no other functionality needed."
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="175dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
