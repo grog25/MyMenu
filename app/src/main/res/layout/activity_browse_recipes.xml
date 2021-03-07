@@ -56,9 +56,9 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="386dp"
-        android:layout_height="559dp"
+        android:layout_width="393dp"
+        android:layout_height="564dp"
         android:text="list of recipes"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="153dp" />
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="148dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

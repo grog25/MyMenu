@@ -72,13 +72,13 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
-        android:layout_width="295dp"
-        android:layout_height="424dp"
+        android:layout_width="318dp"
+        android:layout_height="417dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Meals list w/ check boxes"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="329dp" />
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="336dp" />
 
     <CheckBox
         android:id="@+id/checkBox11"
