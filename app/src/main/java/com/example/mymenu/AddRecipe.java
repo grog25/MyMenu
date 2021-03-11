@@ -13,6 +13,7 @@ public class AddRecipe extends AppCompatActivity {
         setContentView(R.layout.activity_add_recipe);
     }
 
+
     public void addIngredient(View view){
 
     }
