@@ -3,9 +3,12 @@ package com.example.mymenu;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class AddRecipe extends AppCompatActivity {
+
+    private static final String TAG = "AddRecipe";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +17,7 @@ public class AddRecipe extends AppCompatActivity {
     }
 
     public void addIngredient(View view){
+        Log.d(TAG, "add ingredient function called");
 
     }
     public void addRecipeInstructions(View view){

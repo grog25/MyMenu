@@ -67,6 +67,7 @@
         android:layout_marginStart="159dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="159dp"
+        android:onClick="addIngredient"
         android:text="Add Ingredient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.691"

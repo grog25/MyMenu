@@ -8,6 +8,7 @@ public class testAddRecipe {
     @Test
     public void testAddRecipe() {
         AddRecipe recipe = new AddRecipe();
-        assertThat(recipe.addIngredient() );
+        //
+        // assertThat(recipe.addIngredient("This is ") );
     }
 }
