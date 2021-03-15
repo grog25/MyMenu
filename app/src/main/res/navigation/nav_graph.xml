@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
 
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.mymenu.MainActivity"
+        android:label="MainActivity" >
+        <action
+            android:id="@+id/main_addRecipe"
+            app:destination="@id/addRecipe" >
+            <action
+                android:id="@+id/addRecipe_recipeInstructions"
+                app:destination="@id/activity_reicpe_instructions" />
+        </action>
+        <action
+            android:id="@+id/main_browse"
+            app:destination="@id/activity_browse_recipes" />
+        <action
+            android:id="@+id/main_list"
+            app:destination="@id/groceryList" />
+        <action
+            android:id="@+id/main_dayView"
+            app:destination="@id/dayView" />
+    </activity>
+    <activity
+        android:id="@+id/addRecipe"
+        android:name="com.example.mymenu.AddRecipe"
+        android:label="activity_add_recipe"
+        tools:layout="@layout/activity_add_recipe">
+        <action
+            android:id="@+id/addRecipe_recipeInstruct"
+            app:destination="@id/activity_reicpe_instructions" />
+    </activity>
+    <activity
+        android:id="@+id/activity_browse_recipes"
+        android:name="com.example.mymenu.activity_browse_recipes"
+        android:label="activity_browse_recipes" />
+    <activity
+        android:id="@+id/dayView"
+        android:name="com.example.mymenu.DayView"
+        android:label="activity_day_view"
+        tools:layout="@layout/activity_day_view" />
+    <activity
+        android:id="@+id/groceryList"
+        android:name="com.example.mymenu.GroceryList"
+        android:label="activity_grocery_list"
+        tools:layout="@layout/activity_grocery_list" />
+    <activity
+        android:id="@+id/activity_reicpe_instructions"
+        android:name="com.example.mymenu.activity_reicpe_instructions"
+        android:label="activity_reicpe_instructions"
+        tools:layout="@layout/activity_reicpe_instructions" />
 </navigation>
