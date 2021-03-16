@@ -33,4 +33,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    public void addRecipe(View view){
+        Intent intent = new Intent(this, AddRecipe.class);
+        startActivity(intent);
+    }
 }
