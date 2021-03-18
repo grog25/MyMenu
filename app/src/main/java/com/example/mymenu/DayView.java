@@ -25,24 +25,24 @@ public class DayView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_day_view);
         Spinner spinner1 = findViewById(R.id.dateDropDown);
-        ArrayAdapter<String>adapter1 = new ArrayAdapter<>(MainActivity.this,
+        ArrayAdapter<String>adapter1 = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, date);
 
         Spinner spinner2 = findViewById(R.id.mealSelector);
-        ArrayAdapter<String>adapter2 = new ArrayAdapter<>(MainActivity.this,
+        ArrayAdapter<String>adapter2 = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, meals);
 
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter1);
-        spinner1.setOnItemSelectedListener(this);
+        spinner1.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
 
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
-        spinner2.setOnItemSelectedListener(this);
+        spinner2.setOnItemSelectedListener((AdapterView.OnItemSelectedListener) this);
 
     }
 
-    @Override
+    /*@Override*/
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 
         switch (position) {
@@ -59,7 +59,7 @@ public class DayView extends AppCompatActivity {
         }
     }
 
-    @Override
+    /*@Override*/
     public void onNothingSelected(AdapterView<?> parent) {
         // TODO Auto-generated method stub
     }
