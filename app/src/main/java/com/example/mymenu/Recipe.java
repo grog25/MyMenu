@@ -6,6 +6,7 @@ public class Recipe {
     private String recipeName;
     private List<String> measurement;
     private List<String> ingredient;
+    private String instructions;
 
     public List<String> getIngredient() {
         return ingredient;
@@ -19,6 +20,10 @@ public class Recipe {
         return recipeName;
     }
 
+    public String getInstructions() {
+        return instructions;
+    }
+
     public void setIngredient(List<String> ingredient) {
         this.ingredient = ingredient;
     }
@@ -29,5 +34,9 @@ public class Recipe {
 
     public void setRecipeName(String recipeName) {
         this.recipeName = recipeName;
+    }
+
+    public void setInstructions(String instructions) {
+        this.instructions = instructions;
     }
 }

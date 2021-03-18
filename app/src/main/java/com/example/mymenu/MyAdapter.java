@@ -17,9 +17,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     List<String> list1, list2;
     Context context;
 
-    public MyAdapter(Context ct, List<String> ingredient, List<String> measurement){
-        list1 = ingredient;
-        list2 = measurement;
+    public MyAdapter(Context ct, List<String> leftSide, List<String> rightSide){
+        list1 = rightSide;
+        list2 = leftSide;
         context = ct;
     }
 

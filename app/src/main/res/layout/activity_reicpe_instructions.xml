@@ -14,22 +14,29 @@
         android:gravity="start|top"
         android:hint="Enter recipe instructions"
         android:inputType="textMultiLine"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="297dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Submit Recipe"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="667dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="394dp"
         android:layout_height="269dp"
-        tools:layout_editor_absoluteX="9dp"
-        tools:layout_editor_absoluteY="13dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"

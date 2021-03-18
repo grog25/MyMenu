@@ -3,6 +3,8 @@ package com.example.mymenu;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -41,27 +43,26 @@ public class AddRecipe extends AppCompatActivity {
 
         EditText enterIngredient = (EditText) findViewById(R.id.enterIngredient);
         ingredient.add(enterIngredient.getText().toString());
+        enterIngredient.setText("");
 
         EditText enterMeasurement = (EditText) findViewById(R.id.measurement);
         measurement.add(enterMeasurement.getText().toString());
+        enterMeasurement.setText("");
 
         MyAdapter adapter = new MyAdapter(this, ingredient, measurement);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
     }
-    public void addRecipeInstructions(View view){
 
-    }
-
-    public void saveRecipe(){
+    public void saveRecipe() {
         EditText recipeName = (EditText) findViewById(R.id.recipeName);
         recipe.setRecipeName(recipeName.getText().toString());
     }
 
-
-    public void displayRecipe() {
-
+    public void nextActivity(View view){
+        Intent intent = new Intent(this, activity_reicpe_instructions.class);
+        startActivity(intent);
     }
 
 }
