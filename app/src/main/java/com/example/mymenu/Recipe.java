@@ -2,6 +2,7 @@ package com.example.mymenu;
 
 import java.util.List;
 
+//created recipe class for the different recipe objects
 public class Recipe {
     private String recipeName;
     private List<String> measurement;
