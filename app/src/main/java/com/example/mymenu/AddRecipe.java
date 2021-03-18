@@ -38,6 +38,7 @@ public class AddRecipe extends AppCompatActivity {
 
     }
 
+
     public void addIngredient(View view){
         Log.d(TAG, "add ingredient function called");
 

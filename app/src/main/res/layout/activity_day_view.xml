@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayView">
+
+    <Button
+        android:id="@+id/dayViewSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteY="737dp" />
+
+    <CheckBox
+        android:id="@+id/breakfast"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Breakfast"
+        app:layout_constraintBottom_toTopOf="@+id/dinner"
+        app:layout_constraintEnd_toStartOf="@id/lunch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateDropDown"
+        tools:layout_editor_absolutX="47dp" />
+
+    <CheckBox
+        android:id="@+id/lunch"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Lunch"
+        app:layout_constraintBottom_toTopOf="@+id/desert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/breakfast"
+        app:layout_constraintTop_toBottomOf="@id/mealSelector"
+        tools:layout_editor_absoluteX="47dp" />
+
+    <CheckBox
+        android:id="@+id/dinner"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Dinner"
+        app:layout_constraintBottom_toTopOf="@+id/sideDishes"
+        app:layout_constraintTop_toBottomOf="@id/breakfast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/desert"
+        tools:layout_editor_absoluteX="47dp" />
+
+    <CheckBox
+        android:id="@+id/desert"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Dessert"
+        app:layout_constraintBottom_toTopOf="@+id/other"
+        app:layout_constraintTop_toBottomOf="@id/lunch"
+        app:layout_constraintStart_toEndOf="@id/dinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="226dp" />
+
+    <CheckBox
+        android:id="@+id/sideDishes"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Side Dishes"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMealList"
+        app:layout_constraintTop_toBottomOf="@id/dinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/other"
+        tools:layout_editor_absoluteX="47dp" />
+
+    <CheckBox
+        android:id="@+id/other"
+        android:layout_width="112dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Other"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMealList"
+        app:layout_constraintStart_toEndOf="@id/sideDishes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/desert"
+        tools:layout_editor_absoluteX="223dp" />
+
+    <EditText
+        android:id="@+id/editTextMealList"
+        android:layout_width="305dp"
+        android:layout_height="405dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Meals list w/ check boxes"
+        app:layout_constraintBottom_toTopOf="@id/dayViewSaveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/mealSelector"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/lunch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dateDropDown"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dateDropDown"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/breakfast"
+        app:layout_constraintEnd_toStartOf="@+id/mealSelector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
