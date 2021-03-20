@@ -17,7 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox12" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_SideDish" />
 
     <EditText
         android:id="@+id/enterIngredient"
@@ -86,7 +86,7 @@
         tools:layout_editor_absoluteX="9dp" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cb_Breakfast"
         android:layout_width="117dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/cb_Lunch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -104,21 +104,21 @@
         android:layout_marginEnd="16dp"
         android:text="Lunch"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/cb_Breakfast"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/cb_Dinner"
         android:layout_width="86dp"
         android:layout_height="49dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Dinner"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_Breakfast" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/cb_Dessert"
         android:layout_width="93dp"
         android:layout_height="47dp"
         android:layout_marginStart="16dp"
@@ -126,11 +126,11 @@
         android:layout_marginEnd="16dp"
         android:text="Dessert"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox3"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintStart_toEndOf="@+id/cb_Dinner"
+        app:layout_constraintTop_toBottomOf="@+id/cb_Lunch" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/cb_Other"
         android:layout_width="84dp"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -138,8 +138,8 @@
         android:layout_marginEnd="16dp"
         android:text="Other"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBox12"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+        app:layout_constraintStart_toEndOf="@+id/cb_SideDish"
+        app:layout_constraintTop_toBottomOf="@+id/cb_Dessert" />
 
     <TextView
         android:id="@+id/textView"
@@ -152,13 +152,13 @@
         app:layout_constraintTop_toBottomOf="@+id/displayRecipe" />
 
     <CheckBox
-        android:id="@+id/checkBox12"
+        android:id="@+id/cb_SideDish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Side Dish"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/cb_Dinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

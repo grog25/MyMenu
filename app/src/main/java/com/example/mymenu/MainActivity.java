@@ -16,10 +16,12 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    CalendarView calendarView;
+    RecyclerView recyclerView;
+
     private static final String TAG = "MainActivity";
     List<String> mealtime = new ArrayList<String>();
     List<String> meal = new ArrayList<String>();
-    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
