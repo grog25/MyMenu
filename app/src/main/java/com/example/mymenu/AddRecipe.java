@@ -7,12 +7,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +20,13 @@ public class AddRecipe extends AppCompatActivity {
     List<String> measurement = new ArrayList<String>();
     Recipe recipe = new Recipe();
     RecyclerView recyclerView;
+
+    private boolean clickBreakfast;
+    private boolean clickLunch;
+    private boolean clickDinner;
+    private boolean clickDesert;
+    private boolean clickSideDish;
+    private boolean clickOther;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +65,7 @@ public class AddRecipe extends AppCompatActivity {
     }
 
     public void nextActivity(View view){
-        Intent intent = new Intent(this, activity_reicpe_instructions.class);
+        Intent intent = new Intent(this, activity_recipe_instructions.class);
         startActivity(intent);
     }
 

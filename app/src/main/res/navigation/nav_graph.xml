@@ -51,7 +51,7 @@
         tools:layout="@layout/activity_grocery_list" />
     <activity
         android:id="@+id/activity_reicpe_instructions"
-        android:name="com.example.mymenu.activity_reicpe_instructions"
+        android:name="com.example.mymenu.activity_recipe_instructions"
         android:label="activity_reicpe_instructions"
         tools:layout="@layout/activity_reicpe_instructions" />
 </navigation>
