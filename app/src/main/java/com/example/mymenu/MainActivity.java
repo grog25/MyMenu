@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MyAdapter.OnRecipeListener {
 
     CalendarView calendarView;
     RecyclerView recyclerView;
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         recyclerView = findViewById(R.id.recyclerView);
-        MyAdapter adapter = new MyAdapter(this, mealtime, meal);
+        MyAdapter adapter = new MyAdapter(this, mealtime, meal, this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -69,7 +69,23 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void addRecipe(View view){
+        /**
+         * This method is used to start the addRecipe activity
+         */
         Intent intent = new Intent(this, AddRecipe.class);
         startActivity(intent);
+    }
+
+    public void browseRecipes(View view){
+        /**
+         * This method is used to start the browse_recipes activity
+         */
+        Intent intent = new Intent(this, activity_browse_recipes.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onRecipeClick(int position) {
+
     }
 }

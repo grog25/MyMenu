@@ -2,63 +2,85 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/displayRecipes"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MealDatabase">
+    tools:context=".activity_browse_recipes">
 
     <CheckBox
         android:id="@+id/checkBox13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Breakfast"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="7dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Lunch"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox15"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox13"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Dinner"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="6dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox14"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/checkBox16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Dessert"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox17"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox13" />
 
     <CheckBox
         android:id="@+id/checkBox17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Side Dish"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox18"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox16"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox14" />
 
     <CheckBox
         android:id="@+id/checkBox18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Other"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="65dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/checkBox17"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox15" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="393dp"
-        android:layout_height="564dp"
-        android:text="list of recipes"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="148dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/browse_recipes"
+        android:layout_width="410dp"
+        android:layout_height="584dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
