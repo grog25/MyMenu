@@ -10,12 +10,11 @@
         android:id="@+id/dayViewSaveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:text="Save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteY="737dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
         android:id="@+id/breakfast"
@@ -109,9 +108,9 @@
 
     <EditText
         android:id="@+id/editTextMealList"
-        android:layout_width="305dp"
-        android:layout_height="405dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="300dp"
+        android:layout_height="332dp"
+        android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Meals list w/ check boxes"
