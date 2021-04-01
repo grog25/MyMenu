@@ -35,7 +35,7 @@ public class DayView extends AppCompatActivity {
 
     }
 
-    @Override
+
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 
         switch (position) {

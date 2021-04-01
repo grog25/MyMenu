@@ -1,4 +1,4 @@
-package com.example.mymenu;
+/*package com.example.mymenu;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -151,5 +151,5 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         db.close();
         return returnList;
     }
-}
+}*/
 
