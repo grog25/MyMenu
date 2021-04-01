@@ -87,19 +87,19 @@ public class MainActivity extends AppCompatActivity implements MyAdapter.OnRecip
     }
 
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-//                             Bundle savedInstanceState) {
-//        return inflater.inflate(R.layout.activity_main, container, false);
-//    }
-//
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//        NavigationView navView = view.findViewById(R.id.nav_view);
-//        NavController navController = Navigation.findNavController(view);
-//        NavigationUI.setupWithNavController(navView, navController);
-//    }
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_main, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        NavigationView navView = view.findViewById(R.id.nav_view);
+        NavController navController = Navigation.findNavController(view);
+        NavigationUI.setupWithNavController(navView, navController);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
