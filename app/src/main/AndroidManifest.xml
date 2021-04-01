@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMenu">
-        <activity android:name=".recipe_instructions"></activity>
+        <activity android:name=".AddMeal"></activity>
+        <activity android:name=".recipe_instructions" />
         <activity android:name=".MainScreen" />
         <activity android:name=".activity_browse_recipes" />
-        <activity android:name=".DayMeal" />
+        <activity android:name=".DayView" />
         <activity android:name=".GroceryList" />
         <activity android:name=".AddRecipe" />
         <activity android:name=".Calendar" />
