@@ -38,21 +38,10 @@
             android:id="@+id/action_browseRecipes_to_GroceryList"
             app:destination="@id/GroceryList" />
     </fragment>
-    <fragment android:id="@+id/recipeInstructions"
-        android:name="com.example.mymenu.activity_recipe_instructions"
-        tools:layout="@layout/activity_reicpe_instructions"
-        android:label="recipeInstructions">
-        <action
-            android:id="@+id/action_recipeInstructions_to_AddRecipe"
-            app:destination="@id/AddRecipe" />
-    </fragment>
     <fragment android:id="@+id/AddRecipe"
         android:name="com.example.mymenu.AddRecipe"
         tools:layout="@layout/activity_add_recipe"
         android:label="addRecipe">
-        <action
-            android:id="@+id/action_AddRecipe_to_recipeInstructions"
-            app:destination="@id/recipeInstructions" />
         <action
             android:id="@+id/action_AddRecipe_to_mainActivity"
             app:destination="@id/mainActivity" />
