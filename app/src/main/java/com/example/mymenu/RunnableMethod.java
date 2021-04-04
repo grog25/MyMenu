@@ -56,6 +56,10 @@ public class RunnableMethod implements Runnable{
             Log.d("Insert: ", String.valueOf(DatabaseClient.getInstance(context).getAppDatabase().recipeDao().getAll()));
         }
 
+        else if(getMethod() == "delete"){
+            DatabaseClient.getInstance(context).getAppDatabase().recipeDao().delete(recipe);
+        }
+
         else if(getMethod() == "getAll") {
             recipeList = DatabaseClient.getInstance(context).getAppDatabase().recipeDao().getAll();
             for (int i = 0; i < recipeList.size(); i++) {

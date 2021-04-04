@@ -28,6 +28,11 @@ import java.io.Serializable;
         @ColumnInfo(name = "category")
         private String category;
 
+        @ColumnInfo(name = "date")
+        private String date;
+
+        public String getDate() { return date; }
+
         public int getId() {
             return id;
         }
@@ -55,6 +60,8 @@ import java.io.Serializable;
         public void setId(int id) {
             this.id = id;
         }
+
+        public void setDate(String date) { this.date = date; }
 
         public void setIngredient(String ingredient) {
             this.ingredient = ingredient;

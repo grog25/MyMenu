@@ -73,6 +73,7 @@ public class AddRecipe extends AppCompatActivity implements MyAdapter.OnRecipeLi
 
     public void saveRecipe() {
         EditText recipeName = (EditText) findViewById(R.id.recipeName);
+        recipe.setDate(null);
         recipe.setRecipeName(recipeName.getText().toString());
         Gson gson = new Gson();
         String strIngredient = gson.toJson(ingredient);
