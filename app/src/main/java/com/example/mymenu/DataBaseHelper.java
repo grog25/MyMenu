@@ -1,4 +1,4 @@
-/*package com.example.mymenu;
+package com.example.mymenu;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -12,6 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
+    //Columns for the ingredients table
+    public static final String INGREDIENT_TABLE = "INGREDIENT_TABLE";
+    public static final String COLUMN_INGREDIENT = "INGREDIENT";
+    public static final String COLUMN_INGREDIENT_ID = "INGREDIENT_ID";
 
     // Columns for the recipe table
     public static final String RECIPE_TABLE = "RECIPE_TABLE";
@@ -23,12 +27,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_INGREDIENTS = COLUMN_INGREDIENT_ID;
     public static final String COLUMN_MEAL_TYPE = "MEAL_TYPE";
     public static final String COLUMN_INSTRUCTIONS = "INSTRUCTIONS";
-
-    //Columns for the ingredients table
-    public static final String INGREDIENT_TABLE = "INGREDIENT_TABLE";
-    public static final String COLUMN_INGREDIENT = "INGREDIENT";
-    public static final String COLUMN_INGREDIENT_ID = "INGREDIENT_ID";
-
 
     public DataBaseHelper(@Nullable Context context) {
         super(context, "recipe.db", null, 1);
