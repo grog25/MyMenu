@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainActivity"
+        android:title="Home" />
+    <item
+        android:id="@+id/browseRecipes"
+        android:title="Browse Recipes" />
+    <item
+        android:id="@+id/dayView"
+        android:title="My Day" />
+    <item
+        android:id="@+id/AddRecipe"
+        android:title="Add My Recipe" />
+    <item
+        android:id="@+id/GroceryList"
+        android:title="My Grocery List" />
+</menu>

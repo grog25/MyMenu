@@ -4,54 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/mainActivity">
-
-    <activity
-        android:id="@+id/mainActivity"
+    <fragment android:id="@+id/mainActivity"
         android:name="com.example.mymenu.MainActivity"
-        android:label="MainActivity" >
+        tools:layout="@layout/activity_main"
+        android:label="activity_main">
         <action
-            android:id="@+id/main_addRecipe"
-            app:destination="@id/addRecipe" >
-            <action
-                android:id="@+id/addRecipe_recipeInstructions"
-                app:destination="@id/activity_reicpe_instructions" />
-        </action>
+            android:id="@+id/action_mainActivity_to_DayView"
+            app:destination="@id/DayView" />
         <action
-            android:id="@+id/main_browse"
-            app:destination="@id/activity_browse_recipes" />
+            android:id="@+id/action_mainActivity_to_AddRecipe"
+            app:destination="@id/AddRecipe" />
         <action
-            android:id="@+id/main_list"
-            app:destination="@id/groceryList" />
+            android:id="@+id/action_mainActivity_to_browseRecipes"
+            app:destination="@id/browseRecipes" />
         <action
-            android:id="@+id/main_dayView"
-            app:destination="@id/dayView" />
-    </activity>
-    <activity
-        android:id="@+id/addRecipe"
-        android:name="com.example.mymenu.AddRecipe"
-        android:label="activity_add_recipe"
-        tools:layout="@layout/activity_add_recipe">
-        <action
-            android:id="@+id/addRecipe_recipeInstruct"
-            app:destination="@id/activity_reicpe_instructions" />
-    </activity>
-    <activity
-        android:id="@+id/activity_browse_recipes"
+            android:id="@+id/action_mainActivity_to_GroceryList"
+            app:destination="@id/GroceryList" />
+    </fragment>
+    <fragment android:id="@+id/browseRecipes"
         android:name="com.example.mymenu.activity_browse_recipes"
-        android:label="activity_browse_recipes" />
-    <activity
-        android:id="@+id/dayView"
+        tools:layout="@layout/activity_browse_recipes"
+        android:label="activity_browse_recipes">
+        <action
+            android:id="@+id/action_browseRecipes_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_browseRecipes_to_AddRecipe"
+            app:destination="@id/AddRecipe" />
+        <action
+            android:id="@+id/action_browseRecipes_to_DayView"
+            app:destination="@id/DayView" />
+        <action
+            android:id="@+id/action_browseRecipes_to_GroceryList"
+            app:destination="@id/GroceryList" />
+    </fragment>
+    <fragment android:id="@+id/AddRecipe"
+        android:name="com.example.mymenu.AddRecipe"
+        tools:layout="@layout/activity_add_recipe"
+        android:label="addRecipe">
+        <action
+            android:id="@+id/action_AddRecipe_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_AddRecipe_to_DayView"
+            app:destination="@id/DayView" />
+        <action
+            android:id="@+id/action_AddRecipe_to_GroceryList"
+            app:destination="@id/GroceryList" />
+        <action
+            android:id="@+id/action_AddRecipe_to_browseRecipes"
+            app:destination="@id/browseRecipes" />
+    </fragment>
+    <fragment android:id="@+id/DayView"
         android:name="com.example.mymenu.DayView"
-        android:label="activity_day_view"
-        tools:layout="@layout/activity_day_view" />
-    <activity
-        android:id="@+id/groceryList"
+        tools:layout="@layout/activity_day_view"
+        android:label="dayView">
+        <action
+            android:id="@+id/action_DayView_to_AddRecipe"
+            app:destination="@id/AddRecipe" />
+        <action
+            android:id="@+id/action_DayView_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_DayView_to_GroceryList"
+            app:destination="@id/GroceryList" />
+        <action
+            android:id="@+id/action_DayView_to_browseRecipes"
+            app:destination="@id/browseRecipes" />
+    </fragment>
+    <fragment android:id="@+id/GroceryList"
         android:name="com.example.mymenu.GroceryList"
-        android:label="activity_grocery_list"
-        tools:layout="@layout/activity_grocery_list" />
-    <activity
-        android:id="@+id/activity_reicpe_instructions"
-        android:name="com.example.mymenu.activity_recipe_instructions"
-        android:label="activity_reicpe_instructions"
-        tools:layout="@layout/activity_reicpe_instructions" />
+        tools:layout="@layout/activity_grocery_list"
+        android:label="groceryList">
+        <action
+            android:id="@+id/action_GroceryList_to_AddRecipe"
+            app:destination="@id/AddRecipe" />
+        <action
+            android:id="@+id/action_GroceryList_to_DayView"
+            app:destination="@id/DayView" />
+        <action
+            android:id="@+id/action_GroceryList_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_GroceryList_to_browseRecipes"
+            app:destination="@id/browseRecipes" />
+    </fragment>
 </navigation>

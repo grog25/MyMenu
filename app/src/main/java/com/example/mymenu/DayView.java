@@ -10,15 +10,8 @@ import android.widget.Spinner;
 
 public class DayView extends AppCompatActivity {
 
-    private boolean clickBreakfast;
-    private boolean clickLunch;
-    private boolean clickDinner;
-    private boolean clickDesert;
-    private boolean clickSideDish;
-    private boolean clickOther;
-
     private static final String[] date = {"item 1", "item 2", "item 3"};
-    private static final String[] meals = {"Breakfast", "Lunch", "Dinner"};
+    private static final String[] meals = {"Breakfast", "Lunch", "Dinner", "Desert", "Side Dish", "Other"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +35,7 @@ public class DayView extends AppCompatActivity {
 
     }
 
-    /*@Override*/
+
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
 
         switch (position) {
