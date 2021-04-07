@@ -1,4 +1,4 @@
-package com.example.mymenu;
+/*package com.example.mymenu;
 
 import android.content.ContentValues;
 import android.content.Context;
